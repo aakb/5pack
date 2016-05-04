@@ -1,0 +1,20 @@
+uuid: daeb112d-bd17-4730-8f0c-24f1c41f9491
+langcode: en
+status: true
+dependencies:
+  theme:
+    - seven
+_core:
+  default_config_hash: yDjVo9eP9wD6zFFAMIhacPFIvg2cgCdbl1z91CjCVvo
+id: sidetitel
+theme: seven
+region: header
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Sidetitel
+  provider: core
+  label_display: '0'
+visibility: {  }

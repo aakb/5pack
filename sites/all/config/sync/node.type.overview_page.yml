@@ -1,0 +1,20 @@
+uuid: 6e68db34-bdd9-4408-9d04-eb29501cd8dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: j9nN6MFi_t3_sdxHxJ8vauqXIMiBIgNg3voB_cwAJHs
+name: 'Overview Page'
+type: overview_page
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

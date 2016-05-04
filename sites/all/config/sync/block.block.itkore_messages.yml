@@ -1,0 +1,24 @@
+uuid: 66f12310-0992-4394-970e-b6b87dec8968
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - itkore
+_core:
+  default_config_hash: WSO00_Vcbo3cewLvxL1RfThdBSf8rkNNJdR_ps_G2h0
+id: itkore_messages
+theme: itkore
+region: '-1'
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+  cache:
+    max_age: -1
+visibility: {  }

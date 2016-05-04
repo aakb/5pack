@@ -1,0 +1,8 @@
+uuid: 84d8ca54-ff42-49aa-a61a-1ebdbb27d040
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Zv0A-pcjyBrXh3u_S0mH2N701bXav2N5EA46Ci6EUgE
+id: itk_youtube
+label: 'Youtube video'

@@ -1,0 +1,24 @@
+uuid: 9fd7afc7-d6a2-4de5-b3cd-9b7fcfc3aade
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - five_pack
+id: mainnavigation
+theme: five_pack
+region: nav_menu
+weight: -4
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

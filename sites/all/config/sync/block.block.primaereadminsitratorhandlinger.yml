@@ -1,0 +1,20 @@
+uuid: 3c18efbd-82ac-47e9-a927-246a047c38e4
+langcode: da
+status: true
+dependencies:
+  theme:
+    - seven
+_core:
+  default_config_hash: W-eGMo_TUQBcZ5_L886vfa6djCuYqLa0bbQh6L6qpw0
+id: primaereadminsitratorhandlinger
+theme: seven
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primære adminsitratorhandlinger'
+  provider: core
+  label_display: '0'
+visibility: {  }

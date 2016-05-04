@@ -1,0 +1,14 @@
+uuid: 6a5182ef-f0f1-4ac0-8a65-f2cf19391882
+name: 5pack
+mail: my@aarhus.dk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /front
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

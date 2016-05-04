@@ -1,0 +1,8 @@
+uuid: 21419302-6020-4f0a-a4cc-6dd7cc78ff26
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ZI9dFZLbLuQMAGU6cb0DoFSSXL61W4z2P6UGVmDgTDc
+id: itk_text_left
+label: 'Text left'
