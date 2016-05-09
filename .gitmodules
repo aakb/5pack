@@ -1,0 +1,3 @@
+[submodule "profiles/itkore_profile"]
+	path = profiles/itkore_profile
+	url = https://github.com/aakb/itkore.git
