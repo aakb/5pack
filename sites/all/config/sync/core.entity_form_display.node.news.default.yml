@@ -25,7 +25,7 @@ third_party_settings:
         - field_related_page_teaser
         - field_related_page_image
       parent_name: ''
-      weight: 4
+      weight: 5
       label: 'Teaser visning'
       format_type: fieldset
       format_settings:
@@ -33,6 +33,18 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+    group_flexible_content:
+      children:
+        - field_paragraphs
+      parent_name: ''
+      weight: 3
+      label: 'Fleksibelt indhold'
+      format_type: details
+      format_settings:
+        open: false
+        required_fields: true
+        classes: ''
+        id: ''
 _core:
   default_config_hash: XEOC1h19z2pcNbcc7g62Oh4lQpmpKDzO83ikpLrmbZU
 id: node.news.default
@@ -50,7 +62,7 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 11
+    weight: 9
     settings: {  }
     third_party_settings: {  }
   field_main_image:
@@ -64,7 +76,7 @@ content:
     type: image_image
   field_pages:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60
@@ -98,25 +110,25 @@ content:
     type: string_textfield
   langcode:
     type: language_select
-    weight: 9
+    weight: 7
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 13
+    weight: 11
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 10
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 6
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -127,7 +139,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 10
+    weight: 8
     settings:
       match_operator: CONTAINS
       size: 60
