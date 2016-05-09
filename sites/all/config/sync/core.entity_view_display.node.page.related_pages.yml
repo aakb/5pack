@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.related_pages
     - field.field.node.page.body
-    - field.field.node.page.field_instagram
     - field.field.node.page.field_intro_text
     - field.field.node.page.field_main_image
     - field.field.node.page.field_pages
@@ -41,7 +40,6 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
-  field_instagram: true
   field_intro_text: true
   field_main_image: true
   field_pages: true

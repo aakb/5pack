@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_instagram
     - field.field.node.page.field_intro_text
     - field.field.node.page.field_main_image
     - field.field.node.page.field_pages
@@ -17,7 +16,6 @@ dependencies:
     - field_group
     - image
     - imce
-    - itk_instagram_hashtag
     - paragraphs
     - path
     - text
@@ -56,11 +54,6 @@ content:
     weight: 11
     settings: {  }
     third_party_settings: {  }
-  field_instagram:
-    weight: 7
-    settings: {  }
-    third_party_settings: {  }
-    type: field_instagram_hashtag_default_widget
   field_intro_text:
     weight: 1
     settings:
