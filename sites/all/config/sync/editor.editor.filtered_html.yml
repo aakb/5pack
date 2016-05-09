@@ -1,5 +1,5 @@
 uuid: bf4cf749-00dc-4c56-bda2-8e602fd67d1b
-langcode: en
+langcode: da
 status: true
 dependencies:
   config:
@@ -34,6 +34,8 @@ settings:
           items:
             - Format
   plugins:
+    language:
+      language_list: un
     stylescombo:
       styles: ''
 image_upload:

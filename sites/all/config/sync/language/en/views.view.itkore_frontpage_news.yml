@@ -1,0 +1,33 @@
+label: 'ITKore Frontpage news'
+description: 'All content promoted to the front page.'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      title: Nyheder
+      use_more_text: 'All news'
+    display_title: Master
+  block_1:
+    display_title: Block
+  page_1:
+    display_title: Page
+    display_options:
+      use_more_text: 'All news'
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      header:
+        area_text_custom:
+          content: '<h1 class="content--header">Nyheder</h1>'
