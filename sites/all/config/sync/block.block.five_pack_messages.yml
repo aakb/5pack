@@ -11,7 +11,7 @@ _core:
 id: five_pack_messages
 theme: five_pack
 region: '-1'
-weight: 0
+weight: -1
 provider: null
 plugin: system_messages_block
 settings:

@@ -1,0 +1,21 @@
+uuid: 82bffef3-8c3c-41e6-86aa-3bc6c79adaef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intro_text
+    - node.type.page
+  module:
+    - text
+id: node.page.field_intro_text
+field_name: field_intro_text
+entity_type: node
+bundle: page
+label: 'Intro text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -223,7 +223,7 @@ display:
       fields: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: itk-boxlist-column
+      css_class: itk-boxlist-gallery
     display_plugin: default
     display_title: Master
     id: default

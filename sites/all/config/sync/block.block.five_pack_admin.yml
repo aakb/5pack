@@ -13,7 +13,7 @@ _core:
 id: five_pack_admin
 theme: five_pack
 region: '-1'
-weight: 1
+weight: -2
 provider: null
 plugin: 'system_menu_block:admin'
 settings:

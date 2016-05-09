@@ -229,7 +229,7 @@ display:
           plugin_id: rendered_entity
       arguments: {  }
       display_extenders: {  }
-      css_class: itk-boxlist-news
+      css_class: itk-boxlist
       use_more: true
       use_more_always: true
       use_more_text: 'All news'
@@ -247,9 +247,6 @@ display:
       cacheable: false
       max-age: -1
       tags:
-        - 'config:core.entity_view_display.node.event.default'
-        - 'config:core.entity_view_display.node.event.related_pages'
-        - 'config:core.entity_view_display.node.event.teaser'
         - 'config:core.entity_view_display.node.news.default'
         - 'config:core.entity_view_display.node.news.news_teaser'
         - 'config:core.entity_view_display.node.news.related_pages'
@@ -276,9 +273,6 @@ display:
       cacheable: false
       max-age: -1
       tags:
-        - 'config:core.entity_view_display.node.event.default'
-        - 'config:core.entity_view_display.node.event.related_pages'
-        - 'config:core.entity_view_display.node.event.teaser'
         - 'config:core.entity_view_display.node.news.default'
         - 'config:core.entity_view_display.node.news.news_teaser'
         - 'config:core.entity_view_display.node.news.related_pages'
@@ -345,9 +339,6 @@ display:
       cacheable: false
       max-age: -1
       tags:
-        - 'config:core.entity_view_display.node.event.default'
-        - 'config:core.entity_view_display.node.event.related_pages'
-        - 'config:core.entity_view_display.node.event.teaser'
         - 'config:core.entity_view_display.node.news.default'
         - 'config:core.entity_view_display.node.news.news_teaser'
         - 'config:core.entity_view_display.node.news.related_pages'

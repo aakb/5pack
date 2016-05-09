@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.news.field_paragraphs
     - field.field.node.news.field_related_page_image
     - field.field.node.news.field_related_page_teaser
-    - image.style.related_page_image
+    - image.style.news_teaser_image
     - node.type.news
   module:
     - image
@@ -28,7 +28,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: related_page_image
+      image_style: news_teaser_image
       image_link: content
     third_party_settings: {  }
   field_related_page_teaser:
