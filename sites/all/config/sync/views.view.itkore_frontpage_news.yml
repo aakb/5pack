@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.news_teaser
     - node.type.news
+    - system.menu.main
   module:
     - node
     - user
@@ -247,16 +248,16 @@ display:
       cacheable: false
       max-age: -1
       tags:
-        - 'config:core.entity_view_display.node.news.default'
-        - 'config:core.entity_view_display.node.news.news_teaser'
         - 'config:core.entity_view_display.node.news.related_pages'
         - 'config:core.entity_view_display.node.news.teaser'
         - 'config:core.entity_view_display.node.overview_page.default'
         - 'config:core.entity_view_display.node.overview_page.related_pages'
         - 'config:core.entity_view_display.node.overview_page.teaser'
+        - 'config:core.entity_view_display.node.page.teaser'
+        - 'config:core.entity_view_display.node.news.default'
+        - 'config:core.entity_view_display.node.news.news_teaser'
         - 'config:core.entity_view_display.node.page.default'
         - 'config:core.entity_view_display.node.page.related_pages'
-        - 'config:core.entity_view_display.node.page.teaser'
   block_1:
     display_plugin: block
     id: block_1
@@ -330,6 +331,15 @@ display:
           tokenize: false
           content: '<h1 class="content--header">Nyheder</h1>'
           plugin_id: text_custom
+      menu:
+        type: normal
+        title: Nyheder
+        description: ''
+        expanded: true
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: main
     cache_metadata:
       contexts:
         - 'languages:language_interface'
