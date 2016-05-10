@@ -35,3 +35,7 @@ permissions:
   - 'access toolbar'
   - 'administer users'
   - 'access user profiles'
+  - 'administer url aliases'
+  - 'create url aliases'
+  - 'access administration pages'
+  - 'access itkore settings'
