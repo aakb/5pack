@@ -24,9 +24,6 @@ function itkore_base_preprocess_page(&$variables) {
 
   // Frontpage variables for page template.
   if (isset($config) && $variables['is_front'] == TRUE) {
-    // Fetch header top file.
-    $top_image_id = $config->get('itkore_frontpage.frontpage_image');
-    $file = ($top_image_id) ? File::load($top_image_id) : FALSE;
     // Set variables
     $variables['front_title'] = $config->get('itkore_frontpage.frontpage_title');
     $variables['front_lead'] = $config->get('itkore_frontpage.frontpage_lead');
@@ -37,7 +34,11 @@ function itkore_base_preprocess_page(&$variables) {
 
   // Footer variables for page template.
   if (isset($config)) {
-    $variables['front_image'] = ($file) ? $file->url() : 'sites/all/themes/itkore/images/header-background.jpg';
+    // Fetch header top file.
+    $top_image_id = $config->get('itkore_frontpage.frontpage_image');
+    $file = ($top_image_id) ? File::load($top_image_id) : FALSE;
+
+    $variables['front_image'] = ($file) ? $file->url() : 'profiles/itkore_profile/themes/itkore/images/header-background.jpg';
     $variables['footer_text'] = check_markup($config->get('itkore_footer.footer_text'), 'filtered_html');
     $variables['footer_twitter'] = $config->get('itkore_footer.footer_twitter');
     $variables['footer_instagram'] = $config->get('itkore_footer.footer_instagram');

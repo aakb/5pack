@@ -84,13 +84,13 @@
   </div>
 </nav>
 
-<div class="header" role="banner" id="home" style="background-image: url({{ front_image }})">
-  <div class="header--inner">
-  </div>
-</div>
-
 <main role="main" class="content">
-  {{ page.content }}
+  <figure class="content--image-wrapper">
+    <img src="{{ front_image }}">
+  </figure>
+  <div class="content--inner">
+    {{ page.content }}
+  </div>
 </main>
 
 {% include '@itkore/layout/_footer.html.twig' %}
