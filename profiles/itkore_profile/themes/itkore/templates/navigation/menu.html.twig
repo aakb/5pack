@@ -36,7 +36,7 @@
             <div class="hamburger-menu--group {% if item.in_active_trail %} is-active {% endif %}">
           {% endif %}
             {{ link(item.title, item.url, attributes) }}
-            {{ menus.menu_links(item.below, {'class' : 'hamburger-menu--link is-sub'}, menu_level + 1, hamburger_menu) }}
+            {{ menus.menu_links(item.below, {'class' : 'nav--link is-sub'}, menu_level + 1, hamburger_menu) }}
           {% if menu_level == 0 %}
             </div>
           {% endif %}
