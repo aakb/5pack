@@ -36,17 +36,18 @@
  * @ingroup themeable
  */
 #}
-
-{# We need the ugly if-hack to prevent redundant output for empty paragraphs #}
-
+{% if has_file %}
+  {% set url = file_url(paragraph.field_file.entity.uri.value) %}
+{% else %}
+  {% set nurl = 'node/'~nid %}
+{% endif %}
 {% if content.field_text['#items'] is not empty %}
   <div class="paragraphs--internal-link">
-    {% set fileurl = file_url(paragraph.field_file.entity.uri.value) %}
-    <a class="figure" href="{{ fileurl }}">{{ content.field_image }}</a>
+    <a class="figure" href="{{ url }}">{{ content.field_image }}</a>
     <div class="paragraphs--internal-link-wrapper">
-      <a class="paragraphs--title" href="{{ fileurl }}">{{ content.field_title }}</a>
+      <a class="paragraphs--title" href="{{ url }}">{{ content.field_title }}</a>
       {{ content.field_text }}
-      <a href="{{ fileurl }}">{{ content.field_link_text }}</a>
+      <a href="{{ url }}">{{ content.field_link_text }}</a>
     </div>
   </div>
 {% endif %}

@@ -20,6 +20,24 @@ function itkore_preprocess_node(&$variables) {
   }
 }
 
+
+function itkore_preprocess_paragraph(&$variables) {
+  $type = $variables['paragraph']->getType();
+  if ($type == 'itk_internal_link') {
+    $data = $variables['paragraph']->toArray();
+    if ($data['field_file']['0']['target_id']) {
+      $variables['has_file'] = TRUE;
+    }
+    else {
+      $node = \Drupal::routeMatch()->getParameter('node');
+      if ($node) {
+        $variables['nid'] = $node->id();
+      }
+      $variables['has_file'] = FALSE;
+    }
+  }
+}
+
 /**
  * Implements hook_preprocess_node__type().
  */
