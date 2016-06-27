@@ -6,12 +6,14 @@ dependencies:
     - field.field.paragraph.itk_internal_link.field_file
     - field.field.paragraph.itk_internal_link.field_image
     - field.field.paragraph.itk_internal_link.field_link_text
+    - field.field.paragraph.itk_internal_link.field_paragraph_list_link
     - field.field.paragraph.itk_internal_link.field_text
     - field.field.paragraph.itk_internal_link.field_title
     - paragraphs.paragraphs_type.itk_internal_link
   module:
     - file
     - image
+    - link
     - text
 _core:
   default_config_hash: ZrNjIqtNJaq7JCH6g2OHuhb2q8fSdu8Jo_tKxzi3zqM
@@ -41,6 +43,17 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_paragraph_list_link:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
   field_text:
     weight: 2
     label: hidden

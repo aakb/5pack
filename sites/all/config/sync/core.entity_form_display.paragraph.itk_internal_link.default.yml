@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.itk_internal_link.field_file
     - field.field.paragraph.itk_internal_link.field_image
     - field.field.paragraph.itk_internal_link.field_link_text
+    - field.field.paragraph.itk_internal_link.field_paragraph_list_link
     - field.field.paragraph.itk_internal_link.field_text
     - field.field.paragraph.itk_internal_link.field_title
     - image.style.thumbnail
@@ -14,6 +15,7 @@ dependencies:
     - file
     - image
     - imce
+    - link
     - text
 _core:
   default_config_hash: x8KG1HP96_CZl-eX0YoaP3kecHPBSzXUeyVd2kXfuvU
@@ -46,6 +48,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_paragraph_list_link:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
   field_text:
     weight: 2
     settings:
