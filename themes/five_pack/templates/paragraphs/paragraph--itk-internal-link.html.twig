@@ -36,11 +36,15 @@
  * @ingroup themeable
  */
 #}
+
 {% if has_file %}
   {% set url = file_url(paragraph.field_file.entity.uri.value) %}
-{% else %}
-  {% set nurl = 'node/'~nid %}
 {% endif %}
+
+{% if content.field_paragraph_list_link['#items'] is not empty %}
+  {% set url = link %}
+{% endif %}
+
 {% if content.field_text['#items'] is not empty %}
   <div class="paragraphs--internal-link">
     <a class="figure" href="{{ url }}">{{ content.field_image }}</a>

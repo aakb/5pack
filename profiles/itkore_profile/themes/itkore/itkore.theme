@@ -2,6 +2,7 @@
 
 use Drupal\file\Entity\File;
 use Drupal\Core\Config;
+use Drupal\Core\Url;
 
 /**
  * Implements hook_preprocess_node().
@@ -34,6 +35,10 @@ function itkore_preprocess_paragraph(&$variables) {
         $variables['nid'] = $node->id();
       }
       $variables['has_file'] = FALSE;
+    }
+
+    if ($data['field_paragraph_list_link']['0']) {
+      $variables['link'] = Url::fromUri($data['field_paragraph_list_link']['0']['uri']);
     }
   }
 }
