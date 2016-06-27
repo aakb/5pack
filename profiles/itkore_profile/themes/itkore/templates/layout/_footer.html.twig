@@ -1,22 +1,19 @@
-{% if footer_text or footer_twitter or footer_instagram or footer_linkedin %}
-  <footer class="footer">
-    <div class="footer--content">
-      <div class="footer--mail">
-        {{ footer_text | striptags('<a>') | raw  }}
+<footer class="footer">
+  <div class="footer--content">
+    {% if footer_text_left %}
+      <div class="footer--text-left">
+        {{ footer_text_left }}
       </div>
-      {% if footer_twitter or footer_facebook or footer_linkedin %}
-        <div class="footer--social">
-          {% if footer_twitter %}
-            <a href="{{ footer_twitter }}"><figure class="footer--icons"><img src="/profiles/itkore_profile/themes/itkore/images/twitter.png"></figure></a>
-          {% endif %}
-          {% if footer_instagram %}
-            <a href="{{ footer_instagram }}"><figure class="footer--icons"><img src="/profiles/itkore_profile/themes/itkore/images/instagram.png"></figure></a>
-          {% endif %}
-          {% if footer_linkedin %}
-            <a href="{{ footer_linkedin }}"><figure class="footer--icons"><img src="/profiles/itkore_profile/themes/itkore/images/linkedin.png"></figure></a>
-          {% endif %}
-        </div>
-      {% endif %}
-    </div>
-  </footer>
-{% endif %}
+    {% endif %}
+    {% if footer_text_middle %}
+      <div class="footer--text-middle">
+        {{ footer_text_middle }}
+      </div>
+    {% endif %}
+    {% if footer_text_right %}
+      <div class="footer--text-right">
+        {{ footer_text_right }}
+      </div>
+    {% endif %}
+  </div>
+</footer>

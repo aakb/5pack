@@ -39,9 +39,8 @@ function itkore_base_preprocess_page(&$variables) {
     $file = ($top_image_id) ? File::load($top_image_id) : FALSE;
 
     $variables['front_image'] = ($file) ? $file->url() : 'profiles/itkore_profile/themes/itkore/images/header-background.jpg';
-    $variables['footer_text'] = check_markup($config->get('itkore_footer.footer_text'), 'filtered_html');
-    $variables['footer_twitter'] = $config->get('itkore_footer.footer_twitter');
-    $variables['footer_instagram'] = $config->get('itkore_footer.footer_instagram');
-    $variables['footer_linkedin'] = $config->get('itkore_footer.footer_linkedin');
+    $variables['footer_text_left'] = check_markup($config->get('itkore_footer.footer_text_left'), 'filtered_html');
+    $variables['footer_text_middle'] = check_markup($config->get('itkore_footer.footer_text_middle'), 'filtered_html');
+    $variables['footer_text_right'] = check_markup($config->get('itkore_footer.footer_text_right'), 'filtered_html');
   }
 }

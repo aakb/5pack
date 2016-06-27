@@ -115,33 +115,29 @@ class ItkoreSettingsForm extends FormBase {
       '#open' => TRUE,
     );
 
-    $form['footer_wrapper']['footer_text'] = array(
-      '#title' => $this->t('Footer text'),
+    $form['footer_wrapper']['footer_text_left'] = array(
+      '#title' => $this->t('Footer text left'),
       '#type' => 'text_format',
       '#format' => 'filtered_html',
-      '#default_value' => $config->get('itkore_footer.footer_text'),
+      '#default_value' => $config->get('itkore_footer.footer_text_left'),
       '#weight' => '1',
     );
 
-    $form['footer_wrapper']['footer_twitter'] = array(
-      '#title' => $this->t('Twitter URL'),
-      '#type' => 'textfield',
-      '#default_value' => $config->get('itkore_footer.footer_twitter'),
-      '#weight' => '2',
+
+    $form['footer_wrapper']['footer_text_middle'] = array(
+      '#title' => $this->t('Footer text middle'),
+      '#type' => 'text_format',
+      '#format' => 'filtered_html',
+      '#default_value' => $config->get('itkore_footer.footer_text_middle'),
+      '#weight' => '1',
     );
 
-    $form['footer_wrapper']['footer_instagram'] = array(
-      '#title' => $this->t('Instagram URL'),
-      '#type' => 'textfield',
-      '#default_value' => $config->get('itkore_footer.footer_instagram'),
-      '#weight' => '3',
-    );
-
-    $form['footer_wrapper']['footer_linkedin'] = array(
-      '#title' => $this->t('Linkedin URL'),
-      '#type' => 'textfield',
-      '#default_value' => $config->get('itkore_footer.footer_linkedin'),
-      '#weight' => '4',
+    $form['footer_wrapper']['footer_text_right'] = array(
+      '#title' => $this->t('Footer text right'),
+      '#type' => 'text_format',
+      '#format' => 'filtered_html',
+      '#default_value' => $config->get('itkore_footer.footer_text_right'),
+      '#weight' => '1',
     );
 
     $form['submit'] = array(
@@ -196,10 +192,9 @@ class ItkoreSettingsForm extends FormBase {
       'itkore_frontpage.frontpage_sub' => $form_state->getValue('frontpage_sub'),
       'itkore_frontpage.frontpage_button' => $form_state->getValue('frontpage_button'),
       'itkore_frontpage.frontpage_link' => $form_state->getValue('frontpage_link'),
-      'itkore_footer.footer_text' => $form_state->getValue('footer_text')['value'],
-      'itkore_footer.footer_twitter' => $form_state->getValue('footer_twitter'),
-      'itkore_footer.footer_instagram' => $form_state->getValue('footer_instagram'),
-      'itkore_footer.footer_linkedin' => $form_state->getValue('footer_linkedin'),
+      'itkore_footer.footer_text_left' => $form_state->getValue('footer_text_left')['value'],
+      'itkore_footer.footer_text_middle' => $form_state->getValue('footer_text_middle')['value'],
+      'itkore_footer.footer_text_right' => $form_state->getValue('footer_text_right')['value'],
       'itkore_frontpage.frontpage_image' => $file ? $file->id() : NULL
       )
     );
