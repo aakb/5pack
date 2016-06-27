@@ -9,6 +9,7 @@ namespace Drupal\itkore_base\Form;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\file\Entity\File;
+use Drupal\Core\PhpStorage\PhpStorageFactory;
 
 
 /**
@@ -198,6 +199,8 @@ class ItkoreSettingsForm extends FormBase {
       'itkore_frontpage.frontpage_image' => $file ? $file->id() : NULL
       )
     );
+
+    drupal_flush_all_caches();
   }
 }
 
