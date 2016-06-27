@@ -19,6 +19,20 @@ function itkore_preprocess_node(&$variables) {
   if (function_exists($function)) {
     $function($variables);
   }
+
+  // Set a default image.
+  if (empty($variables['content']['field_main_image']['0']) &&  \Drupal::moduleHandler()->moduleExists('itkore_base')) {
+    // Fetch frontpage config settings.
+    $config = \Drupal::getContainer()->get('itkore_base.itkore_config');
+
+    if (isset($config)) {
+      // Fetch header top file.
+      $top_image_id = $config->get('itkore_frontpage.frontpage_image');
+      $file = ($top_image_id) ? File::load($top_image_id) : FALSE;
+      $variables['node_no_image'] = TRUE;
+      $variables['default_image'] = ($file) ? $file->url() : 'profiles/itkore_profile/themes/itkore/images/header-background.jpg';
+    }
+  }
 }
 
 
