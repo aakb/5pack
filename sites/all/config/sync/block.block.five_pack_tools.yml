@@ -1,0 +1,28 @@
+uuid: 8c0d91e1-33fa-4cc3-9eb1-967fd57c49df
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - five_pack
+_core:
+  default_config_hash: djkzb6uOQjWzfymBXDbUR91sLc8KB2iQ6rpl6q0YEE0
+id: five_pack_tools
+theme: five_pack
+region: '-1'
+weight: -3
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  cache:
+    max_age: -1
+visibility: {  }

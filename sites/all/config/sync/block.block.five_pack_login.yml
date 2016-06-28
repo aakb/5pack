@@ -1,0 +1,24 @@
+uuid: f58f6ada-fd57-4dd6-bb72-908c4ea23b9a
+langcode: en
+status: false
+dependencies:
+  module:
+    - user
+  theme:
+    - five_pack
+_core:
+  default_config_hash: x16SpaqM4lHfKnzWLRhu9s-ByKOgPkjgmAExZ35eRaY
+id: five_pack_login
+theme: five_pack
+region: '-1'
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+  cache:
+    max_age: -1
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 97e53d28-8e98-43fa-853f-c27d9f7b135a
+langcode: da
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XLvcg9h6hGgOggmxF9x64GMeUbNCTraGQ3Y0OTVYU1w
+id: itk_iframe
+label: Iframe

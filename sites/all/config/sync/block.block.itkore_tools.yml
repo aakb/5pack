@@ -1,0 +1,28 @@
+uuid: 69427502-1278-40ec-aae9-53d65b0bb02a
+langcode: da
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - itkore
+_core:
+  default_config_hash: djkzb6uOQjWzfymBXDbUR91sLc8KB2iQ6rpl6q0YEE0
+id: itkore_tools
+theme: itkore
+region: '-1'
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  cache:
+    max_age: -1
+visibility: {  }
