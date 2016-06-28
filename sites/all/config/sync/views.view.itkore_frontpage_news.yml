@@ -161,7 +161,7 @@ display:
           grouping: {  }
           row_class: ''
           default_row_class: false
-      title: 'Seneste nyt'
+      title: Nyheder
       header:
         area_text_custom:
           id: area_text_custom
@@ -249,15 +249,15 @@ display:
       max-age: -1
       tags:
         - 'config:core.entity_view_display.node.news.related_pages'
-        - 'config:core.entity_view_display.node.news.teaser'
         - 'config:core.entity_view_display.node.overview_page.default'
         - 'config:core.entity_view_display.node.overview_page.related_pages'
         - 'config:core.entity_view_display.node.overview_page.teaser'
-        - 'config:core.entity_view_display.node.page.teaser'
         - 'config:core.entity_view_display.node.news.default'
         - 'config:core.entity_view_display.node.news.news_teaser'
+        - 'config:core.entity_view_display.node.news.teaser'
         - 'config:core.entity_view_display.node.page.default'
         - 'config:core.entity_view_display.node.page.related_pages'
+        - 'config:core.entity_view_display.node.page.teaser'
   block_1:
     display_plugin: block
     id: block_1
