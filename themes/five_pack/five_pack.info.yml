@@ -9,7 +9,6 @@ libraries:
 
 stylesheets-remove:
   - @itkore/css/styles.css
-  - @itkore/css/ie9.css
 
 regions:
   hamburger: Hamburger menu
