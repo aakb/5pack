@@ -195,6 +195,18 @@ display:
           relationship: none
           view_mode: related_pages
       sorts:
+        field_frontpage_priority_value:
+          id: field_frontpage_priority_value
+          table: node__field_frontpage_priority
+          field: field_frontpage_priority_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
         created:
           id: created
           table: node_field_data
