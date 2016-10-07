@@ -162,8 +162,8 @@ $boxlist-padding: 1em;
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 1em;
-      max-width: 5em;
-
+      width: 5em;
+      flex-basis: 5em;
       order: 2;
     }
 
@@ -188,10 +188,6 @@ $boxlist-padding: 1em;
 
           font-weight: 300;
         }
-      }
-
-      figure {
-        max-width: 6em;
       }
     }
 
