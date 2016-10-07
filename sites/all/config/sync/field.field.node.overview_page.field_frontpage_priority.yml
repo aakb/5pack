@@ -1,0 +1,24 @@
+uuid: 4f00f318-5b04-4b7c-91d5-aac07850832b
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_frontpage_priority
+    - node.type.overview_page
+  module:
+    - weight
+id: node.overview_page.field_frontpage_priority
+field_name: field_frontpage_priority
+entity_type: node
+bundle: overview_page
+label: 'Forside prioritet'
+description: 'Lav værdi betyder først i rækken'
+required: false
+translatable: false
+default_value:
+  -
+    value: '0'
+default_value_callback: ''
+settings:
+  range: '10'
+field_type: weight
