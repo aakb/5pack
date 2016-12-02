@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.overview_page.body
+    - field.field.node.overview_page.field_frontpage_priority
     - field.field.node.overview_page.field_intro_text
     - field.field.node.overview_page.field_main_image
     - field.field.node.overview_page.field_pages
@@ -19,12 +20,14 @@ dependencies:
     - paragraphs
     - path
     - text
+    - weight
 third_party_settings:
   field_group:
     group_teaser:
       children:
         - field_related_page_teaser
         - field_related_page_image
+        - field_frontpage_priority
       parent_name: ''
       weight: 6
       label: 'Teaser display'
@@ -66,6 +69,11 @@ content:
     weight: 9
     settings: {  }
     third_party_settings: {  }
+  field_frontpage_priority:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: weight_selector
   field_intro_text:
     weight: 1
     settings:

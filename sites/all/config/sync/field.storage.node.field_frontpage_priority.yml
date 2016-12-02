@@ -1,0 +1,20 @@
+uuid: b8907b1b-8937-42cd-8230-51795716be3a
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+    - weight
+id: node.field_frontpage_priority
+field_name: field_frontpage_priority
+entity_type: node
+type: weight
+settings:
+  unsigned: false
+module: weight
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
