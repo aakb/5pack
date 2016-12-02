@@ -46,10 +46,10 @@
         "drupal-rebuild": "Drupal\\composer_manager\\Composer\\Command::rebuild",
         "drupal-update": "Drupal\\composer_manager\\Composer\\Command::update"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "drupal": {
             "type": "composer",
-            "url": "https://packagist.drupal-composer.org"
+            "url": "https://packages.drupal.org/8"
         }
-    ]
+    }
 }
