@@ -8,13 +8,12 @@ libraries:
   - five_pack/global-styling
 
 stylesheets-remove:
-  - @itkore/css/styles.css
+  - "@itkore/css/styles.css"
 
 regions:
   hamburger: Hamburger menu
   nav_menu: Nav menu
   content: Content
-
 
 version: '1.0.0'
 core: '8.x'
