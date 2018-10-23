@@ -14,7 +14,7 @@ _core:
 id: itkore_frontpage_news
 label: 'ITKore Frontpage news'
 module: node
-description: 'All content promoted to the front page.'
+description: 'Alt indhold som vises på forsiden.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -33,13 +33,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Udfør
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       filters:
         type:
           id: type
@@ -89,7 +89,7 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: true
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -233,7 +233,7 @@ display:
       css_class: itk-boxlist
       use_more: true
       use_more_always: true
-      use_more_text: 'All news'
+      use_more_text: 'Alle nyheder'
       link_url: ''
       link_display: page_1
     display_plugin: default
@@ -248,20 +248,20 @@ display:
       cacheable: false
       max-age: -1
       tags:
+        - 'config:core.entity_view_display.node.news.default'
+        - 'config:core.entity_view_display.node.news.news_teaser'
         - 'config:core.entity_view_display.node.news.related_pages'
+        - 'config:core.entity_view_display.node.news.teaser'
         - 'config:core.entity_view_display.node.overview_page.default'
         - 'config:core.entity_view_display.node.overview_page.related_pages'
         - 'config:core.entity_view_display.node.overview_page.teaser'
-        - 'config:core.entity_view_display.node.news.default'
-        - 'config:core.entity_view_display.node.news.news_teaser'
-        - 'config:core.entity_view_display.node.news.teaser'
         - 'config:core.entity_view_display.node.page.default'
         - 'config:core.entity_view_display.node.page.related_pages'
         - 'config:core.entity_view_display.node.page.teaser'
   block_1:
     display_plugin: block
     id: block_1
-    display_title: Block
+    display_title: Blok
     position: 3
     display_options:
       display_extenders: {  }
@@ -287,7 +287,7 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: Side
     position: 3
     display_options:
       display_extenders: {  }
@@ -300,7 +300,7 @@ display:
         pager: false
         header: false
       use_more_always: true
-      use_more_text: 'All news'
+      use_more_text: 'Alle nyheder'
       pager:
         type: mini
         options:
@@ -313,12 +313,12 @@ display:
             next: ››
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Antal elementer'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Offset
+            offset_label: Forskydning
       header:
         area_text_custom:
           id: area_text_custom
@@ -335,11 +335,12 @@ display:
         type: normal
         title: Nyheder
         description: ''
-        expanded: true
+        expanded: false
         parent: ''
-        weight: 0
+        weight: -48
         context: '0'
         menu_name: main
+        enabled: true
     cache_metadata:
       contexts:
         - 'languages:language_interface'

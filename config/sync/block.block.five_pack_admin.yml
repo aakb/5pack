@@ -12,7 +12,7 @@ _core:
   default_config_hash: PaKxrAzSL5rUIaWdODCTcWMET_3BG0cmHOHkpPwpN_k
 id: five_pack_admin
 theme: five_pack
-region: '-1'
+region: hamburger
 weight: -2
 provider: null
 plugin: 'system_menu_block:admin'
