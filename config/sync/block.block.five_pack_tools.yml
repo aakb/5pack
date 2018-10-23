@@ -12,7 +12,7 @@ _core:
   default_config_hash: djkzb6uOQjWzfymBXDbUR91sLc8KB2iQ6rpl6q0YEE0
 id: five_pack_tools
 theme: five_pack
-region: '-1'
+region: hamburger
 weight: -3
 provider: null
 plugin: 'system_menu_block:tools'

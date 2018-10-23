@@ -32,6 +32,7 @@ content:
       imce:
         enabled: true
     type: file_generic
+    region: content
   field_image:
     weight: 0
     settings:
@@ -41,6 +42,7 @@ content:
       imce:
         enabled: true
     type: image_image
+    region: content
   field_link_text:
     weight: 4
     settings:
@@ -48,6 +50,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
   field_paragraph_list_link:
     weight: 5
     settings:
@@ -55,6 +58,7 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
   field_text:
     weight: 2
     settings:
@@ -62,6 +66,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
   field_title:
     weight: 1
     settings:
@@ -69,6 +74,8 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
 hidden:
   created: true
+  status: true
   uid: true

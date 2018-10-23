@@ -10,13 +10,13 @@ _core:
   default_config_hash: WSO00_Vcbo3cewLvxL1RfThdBSf8rkNNJdR_ps_G2h0
 id: itkore_messages
 theme: itkore
-region: '-1'
+region: hamburger
 weight: 0
 provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: 'Status messages'
+  label: Statusmeddelelser
   provider: system
   label_display: '0'
   cache:
