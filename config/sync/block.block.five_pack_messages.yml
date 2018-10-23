@@ -10,7 +10,7 @@ _core:
   default_config_hash: WSO00_Vcbo3cewLvxL1RfThdBSf8rkNNJdR_ps_G2h0
 id: five_pack_messages
 theme: five_pack
-region: '-1'
+region: hamburger
 weight: -1
 provider: null
 plugin: system_messages_block

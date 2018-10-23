@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_frontpage_priority
     - field.field.node.page.field_intro_text
     - field.field.node.page.field_main_image
     - field.field.node.page.field_pages
@@ -31,6 +32,7 @@ content:
       image_style: news_teaser_image
       image_link: content
     third_party_settings: {  }
+    region: content
   field_related_page_teaser:
     type: string
     weight: 1
@@ -38,8 +40,10 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
 hidden:
   body: true
+  field_frontpage_priority: true
   field_intro_text: true
   field_main_image: true
   field_pages: true

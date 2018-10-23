@@ -10,7 +10,7 @@ _core:
   default_config_hash: x16SpaqM4lHfKnzWLRhu9s-ByKOgPkjgmAExZ35eRaY
 id: five_pack_login
 theme: five_pack
-region: '-1'
+region: hamburger
 weight: 0
 provider: null
 plugin: user_login_block
