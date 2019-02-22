@@ -1,5 +1,10 @@
 # Citypack changelog
 
+## 1.2.0
+
+* Updated drupal.
+* Added system_status.
+
 ## 1.1.2
 
 * Updated to Drupal 8.6.2
