@@ -29,6 +29,7 @@
         "drupal/paragraphs": "^1.1",
         "drupal/pathauto": "^1.0",
         "drupal/redirect": "^1.0@alpha",
+        "drupal/system_status": "^2.8",
         "drupal/token": "^1.0",
         "drupal/toolbar_visibility": "^1.2",
         "drupal/weight": "^3.0",
