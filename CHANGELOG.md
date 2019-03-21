@@ -1,5 +1,9 @@
 # Citypack changelog
 
+## 1.2.1
+
+* Updated drupal to 8.6.13.
+
 ## 1.2.0
 
 * Updated drupal.
